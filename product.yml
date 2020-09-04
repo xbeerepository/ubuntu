@@ -1,3 +1,24 @@
 schema-version: 1.0
 name: ubuntu
 
+system:
+  os: linux
+  arch: amd64
+  user: ubuntu
+  container: "{{ piper.name }}:{{ piper.version }}"
+
+annotations:
+  virtualbox:
+    ova: https://s3.eu-west-3.amazonaws.com/xbee.repository/{{ piper.name }}/{{ piper.name }}-{{ piper.version }}-amd64.ova
+  aws:
+    eu-west-3: ami-08022d659525706d1
+
+var:
+  timezone: Europe/Paris
+ 
+provision:
+  - shell: msg.sh
+  - shell: rm -f /etc/localtime && ln -sf /usr/share/zoneinfo/{{ timezone }} /etc/localtime
+
+up:
+  - shell: up.sh
