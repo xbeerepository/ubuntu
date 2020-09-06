@@ -2,12 +2,10 @@ schema-version: 1.0
 name: ubuntu
 
 system:
-  os: linux
-  arch: amd64
   user: ubuntu
   container: "{% piper.name %}:{% piper.version %}"
 
-annotations:
+providers:
   virtualbox:
     ova: https://s3.eu-west-3.amazonaws.com/xbee.repository/{% piper.name %}/{% piper.name %}-{% piper.version %}-amd64.ova
   aws:
