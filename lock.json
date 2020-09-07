@@ -1,0 +1,16 @@
+{
+    "Ids": [
+        [
+            {
+                "name": "aws",
+                "version": "latest",
+                "origin": "https://github.com/piperlabs/aws.git"
+            },
+            {
+                "name": "aws",
+                "version": "master",
+                "origin": "https://github.com/piperlabs/aws.git"
+            }
+        ]
+    ]
+}
