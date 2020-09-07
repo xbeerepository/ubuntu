@@ -19,4 +19,4 @@ provision:
   - shell: rm -f /etc/localtime && ln -sf /usr/share/zoneinfo/{% timezone %} /etc/localtime
 
 up:
-  - shell: up.sh
+  - shell: hostnamectl set-hostname {{ .host.name }}
