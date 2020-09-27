@@ -5,7 +5,7 @@ system:
   user: ubuntu
   container: "{% piper.name %}:{% piper.version %}"
 
-providers:
+provider:
   virtualbox:
     ova: https://s3.eu-west-3.amazonaws.com/xbee.repository/{% piper.name %}/{% piper.name %}-{% piper.version %}-amd64.ova
   aws:
