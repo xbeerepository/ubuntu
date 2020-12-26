@@ -1,5 +1,4 @@
 schema-version: 1.0
-name: ubuntu
 
 system:
   user: ubuntu
@@ -9,38 +8,41 @@ provider:
   virtualbox:
     ova: https://s3.eu-west-3.amazonaws.com/xbee.repository/{% piper.name %}/{% piper.name %}-{% piper.version %}-amd64.ova
   aws:
-    af-south-1: ami-0181304606527a71d
-    ap-east-1: ami-e6f4b797 
-    ap-northeast-1: ami-00e932970b4c614a2
-    ap-south-1: ami-05613ebaed08620e9
-    ap-southeast-1: ami-0e7a0ffc408b29e18
-    ca-central-1: ami-08fbd7d797b6db1bc
-    eu-central-1 : ami-05d68e6d48a41210f
-    eu-north-1: ami-094e37fc708787aa2
-    eu-south-1: ami-06913823e4e8ebcb2
-    eu-west-1: ami-0e3d4c7d8294ccee4
-    me-south-1: ami-0d4c4edee75661766
-    sa-east-1: ami-0577a676735a4fe51
-    us-east-1: ami-03f6f0014076ab3c5
-    us-west-1: ami-01e1e77dd07a52bfe
-    cn-north-1: ami-0bdcf50b6cefb4366
-    cn-northwest-1: ami-04effa29f4d91541f
-    us-gov-west-1: ami-6c2f100d 
-    us-gov-east-1: ami-2e6e815f 
-    ap-northeast-2: ami-02631a5b4a40bde84
-    ap-southeast-2: ami-0088e9b5522481bd6
-    eu-west-2: ami-09599c9649ee05284
-    us-east-2: ami-07a6d8b82e1d0a69e
-    us-west-2: ami-0f4725409014194a7
-    ap-northeast-3: ami-08b9ca4aa430c4867
-    eu-west-3: ami-0fd088ee63158ee72
+    amis:
+      af-south-1: ami-0181304606527a71d
+      ap-east-1: ami-e6f4b797 
+      ap-northeast-1: ami-00e932970b4c614a2
+      ap-south-1: ami-05613ebaed08620e9
+      ap-southeast-1: ami-0e7a0ffc408b29e18
+      ca-central-1: ami-08fbd7d797b6db1bc
+      eu-central-1 : ami-05d68e6d48a41210f
+      eu-north-1: ami-094e37fc708787aa2
+      eu-south-1: ami-06913823e4e8ebcb2
+      eu-west-1: ami-0e3d4c7d8294ccee4
+      me-south-1: ami-0d4c4edee75661766
+      sa-east-1: ami-0577a676735a4fe51
+      us-east-1: ami-03f6f0014076ab3c5
+      us-west-1: ami-01e1e77dd07a52bfe
+      cn-north-1: ami-0bdcf50b6cefb4366
+      cn-northwest-1: ami-04effa29f4d91541f
+      us-gov-west-1: ami-6c2f100d 
+      us-gov-east-1: ami-2e6e815f 
+      ap-northeast-2: ami-02631a5b4a40bde84
+      ap-southeast-2: ami-0088e9b5522481bd6
+      eu-west-2: ami-09599c9649ee05284
+      us-east-2: ami-07a6d8b82e1d0a69e
+      us-west-2: ami-0f4725409014194a7
+      ap-northeast-3: ami-08b9ca4aa430c4867
+      eu-west-3: ami-0fd088ee63158ee72
     
 var:
   timezone: Europe/Paris
- 
+  ps1: "[\\u@\\H \\W]\\$"
+
 provision:
   - shell: msg.sh
   - shell: rm -f /etc/localtime && ln -sf /usr/share/zoneinfo/{% timezone %} /etc/localtime
-
+  - env: PS1={% ps1 %}
+  
 up:
   - shell: hostnamectl set-hostname {{ .host.name }}
