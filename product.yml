@@ -40,9 +40,9 @@ var:
   ps1: "[\\u@\\H \\W]\\$"
 
 provision:
-  - shell: msg.sh
+  - shell: "{{ .templates }}/msg.sh"
   - shell: rm -f /etc/localtime && ln -sf /usr/share/zoneinfo/{% timezone %} /etc/localtime
   - env: PS1={% ps1 %}
-  
+
 up:
   - shell: hostnamectl set-hostname {{ .host.name }}
