@@ -1,6 +1,6 @@
 schema-version: 1.0
 
-type: provider
+type: system
 
 system:
   user: ubuntu
