@@ -8,7 +8,7 @@ system:
 
 provider:
   virtualbox:
-    ova: https://s3.eu-west-3.amazonaws.com/xbee.repository/{% xbee.name %}/{% xbee.name %}-{% xbee.version %}-amd64.ova
+    ova: https://s3.eu-west-3.amazonaws.com/xbee.repository.public/{% xbee.name %}/{% xbee.name %}-{% xbee.version %}-amd64.ova
   aws:
     amis:
       eu-west-3: ami-006987b5e26f0d62e
