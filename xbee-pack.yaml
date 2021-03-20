@@ -42,6 +42,7 @@ var:
   ps1: "[\\u@\\H \\W]\\$"
 
 provision:
+  - pkg: curl
   - shell: "{{ .templates }}/msg.sh"
   - shell: rm -f /etc/localtime && ln -sf /usr/share/zoneinfo/{% timezone %} /etc/localtime
   - env: PS1={% ps1 %}
