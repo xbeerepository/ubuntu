@@ -43,7 +43,7 @@ var:
 
 provision:
   - pkg: 
-     name: curl xz-utils
+     name: curl xz-utils tzdata
      update: true
   - shell: "{{ .templates }}/msg.sh"
   - shell: rm -f /etc/localtime && ln -sf /usr/share/zoneinfo/{% timezone %} /etc/localtime
