@@ -39,14 +39,6 @@ provider:
     
 var:
   timezone: Europe/Paris
-  ps1: "[\\u@\\H \\W]\\$"
-
+ 
 provision:
-  - pkg: 
-     name: curl wget xz-utils tzdata
-     update: true
-  - shell: "{{ .templates }}/msg.sh"
-  - shell: rm -f /etc/localtime && ln -sf /usr/share/zoneinfo/{% timezone %} /etc/localtime
-  - env: PS1={% ps1 %}
-
-up: hostnamectl set-hostname {{ .host.name }}
+   - shell: rm -f /etc/localtime && ln -sf /usr/share/zoneinfo/{% timezone %} /etc/localtime
