@@ -8,7 +8,7 @@ system:
 
 provider:
   virtualbox:
-    disk: https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.vmdk
+    disk: https://s3.eu-west-3.amazonaws.com/xbee.repository/ubuntu/focal-server-cloudimg-amd64.vmdk
   aws:
     amis:
       af-south-1: ami-0181304606527a71d
