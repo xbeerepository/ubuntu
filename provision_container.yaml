@@ -1,0 +1,7 @@
+labels:
+  container: true
+actions:
+  - pkg: 
+      name: tzdata
+      update: true
+    after: echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
