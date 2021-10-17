@@ -2,6 +2,6 @@ labels:
   container: true
 actions:
   - pkg: 
-      name: tzdata
+      name: tzdata ca-certificates
       update: true
     before: echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
