@@ -6,6 +6,8 @@ system:
   user: ubuntu
   container: "{% xbeeName %}:{% xbeeVersion %}"
 
+dev: ./ubuntu-dev
+
 provider:
   virtualbox:
     disk: https://s3.eu-west-3.amazonaws.com/xbee.repository/ubuntu/focal-server-cloudimg-amd64.vmdk
