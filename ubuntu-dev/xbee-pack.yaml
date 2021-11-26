@@ -5,6 +5,7 @@ type: system
 extend: ..
 
 provision:
-  - pkg: build-essential
+  - pkg: build-essential wget
+
 
 
