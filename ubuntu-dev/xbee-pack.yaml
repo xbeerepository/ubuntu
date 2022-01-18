@@ -4,8 +4,10 @@ type: system
 
 extend: ..
 
+dependency: ../../xbee-os/gcc
+
 provision:
-  - pkg: build-essential wget
+  - pkg: wget
 
 
 
