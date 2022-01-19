@@ -4,10 +4,8 @@ type: system
 
 extend: ..
 
-dependency: gcc
-
 provision:
-  - pkg: wget
+  - pkg: build-essential wget
 
 
 
