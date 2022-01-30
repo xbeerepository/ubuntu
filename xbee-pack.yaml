@@ -62,7 +62,7 @@ provider:
         ap-southeast-2: ami-064ae46f77d98669f
 
     
-var:
+in:
   timezone: Europe/Paris
  
 provision:
