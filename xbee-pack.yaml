@@ -38,7 +38,7 @@ provider:
         us-east-2: ami-07a6d8b82e1d0a69e
         us-west-2: ami-0f4725409014194a7
         ap-northeast-3: ami-08b9ca4aa430c4867
-        eu-west-3: ami-0fd088ee63158ee72
+        eu-west-3: ami-002b18014084a58f7
       linux_arm64:
         eu-south-1: ami-0c5d7b446501f4612
         eu-west-3: ami-0dd7113bcb34cf6b1
