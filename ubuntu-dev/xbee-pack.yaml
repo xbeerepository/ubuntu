@@ -1,8 +1,6 @@
 schema-version: 1.0
 
-type: system
-
-extend: ..
+type: dev
 
 provision:
   - pkg: build-essential
