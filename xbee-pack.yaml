@@ -8,56 +8,6 @@ system:
 
 dev: ./ubuntu-dev
 
-provider:
-  virtualbox:
-    disk: https://s3.eu-west-3.amazonaws.com/xbee.repository/ubuntu/focal-server-cloudimg-amd64.vmdk
-  aws:
-    amis:
-      linux_amd64:
-        eu-south-1: ami-0f7652007885061cc
-        us-east-2: ami-00dd98a7ea7ebb3a4
-        ap-southeast-1: ami-095789182717d3f07
-        eu-west-1: ami-0e50faabfd50f00cb
-        us-west-2: ami-0ecb01759a1945ea3
-        us-east-1: ami-0076b30a832c25ac4
-        ap-northeast-2: ami-0a4ef0c379aad0218
-        sa-east-1: ami-03f68d7f2e39f4abc
-        eu-north-1: ami-062c06e1434a23301
-        me-south-1: ami-04294d552243a7f68
-        us-west-1: ami-093efb6335ba5ee22
-        ap-southeast-2: ami-0538987f0728976b1
-        eu-west-3: ami-002b18014084a58f7
-        eu-central-1: ami-0b3373818012703a0
-        ca-central-1: ami-03552b94779169aae
-        ap-northeast-3: ami-055312c4331668c99
-        ap-south-1: ami-0996c670c19a9cb2e
-        ap-northeast-1: ami-0fa762d2803790e34
-        af-south-1: ami-05bd87b64560f21bc
-        ap-east-1: ami-020a3716e49444783
-        eu-west-2: ami-0b2834542914df958
-      linux_arm64:
-        eu-west-1: ami-004f9549d7c0b2251
-        ca-central-1: ami-059bdc3c11ad73285
-        ap-northeast-2: ami-0636885e5015395db
-        eu-south-1: ami-0b8837e9ae910c0d1
-        eu-west-3: ami-0313bb9f21dccbda0
-        eu-north-1: ami-03288d00618ce4e51
-        eu-central-1: ami-0b963234a23da9707
-        me-south-1: ami-07ce47f6d511337f3
-        af-south-1: ami-0b76022f59f19b776
-        us-east-2: ami-0b2eceae7bedc87f8
-        eu-west-2: ami-02b91d959c0994472
-        ap-south-1: ami-077c8998f2c99ab9c
-        ap-southeast-1: ami-0881fc44bb48e7566
-        ap-northeast-3: ami-06e9facf1dfa8112b
-        ap-southeast-2: ami-07af30923c912d6bb
-        us-west-1: ami-0c79c717527c2f205
-        ap-northeast-1: ami-0cf6794aff2531315
-        us-west-2: ami-0326989b0925fae61
-        ap-east-1: ami-04471a52994fc2b35
-        sa-east-1: ami-0f83a3a2ff9de3d69
-        us-east-1: ami-0848951f552fd7605
-    
 in:
   timezone: Europe/Paris
  
