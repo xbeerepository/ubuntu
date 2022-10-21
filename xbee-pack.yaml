@@ -12,4 +12,8 @@ in:
   timezone: Europe/Paris
  
 provision:
-   - shell: rm -f /etc/localtime && ln -sf /usr/share/zoneinfo/{% timezone %} /etc/localtime
+   - shell:
+       cmds:
+           - rm -f /etc/localtime && ln -sf /usr/share/zoneinfo/{% timezone %} /etc/localtime
+           - sed -i 's/^providers =/#providers =/' /etc/ssl/openssl.cnf
+
