@@ -1,7 +1,12 @@
 labels:
   container: true
 actions:
-  - pkg: 
-      name: tzdata ca-certificates wget
+  - pkg:
+      name: ca-certificates wget
       update: true
-    before: echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
+    after:
+        cmd: apt-get install -y tzdata
+        envs:
+          - DEBIAN_FRONTEND=noninteractive
+
+

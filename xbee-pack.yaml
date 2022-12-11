@@ -62,4 +62,4 @@ in:
   timezone: Europe/Paris
  
 provision:
-   - shell: rm -f /etc/localtime && ln -sf /usr/share/zoneinfo/{% timezone %} /etc/localtime
+  - env: TZ={% timezone %}
