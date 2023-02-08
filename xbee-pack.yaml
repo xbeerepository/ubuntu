@@ -18,7 +18,7 @@ provider:
         amis:
             linux_amd64:
 provision:
+   - env: TZ={% timezone %}
    - shell:
        cmds:
-           - env: TZ={% timezone %}
-           - sed -i 's/^providers =/#providers =/' /etc/ssl/openssl.cnf
+            - sed -i 's/^providers =/#providers =/' /etc/ssl/openssl.cnf
