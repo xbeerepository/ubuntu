@@ -10,10 +10,15 @@ dev: ./ubuntu-dev
 
 in:
   timezone: Europe/Paris
- 
+
+provider:
+    virtualbox:
+        disk: https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.vmdk
+    aws:
+        amis:
+            linux_amd64:
 provision:
    - shell:
        cmds:
-           - rm -f /etc/localtime && ln -sf /usr/share/zoneinfo/{% timezone %} /etc/localtime
+           - env: TZ={% timezone %}
            - sed -i 's/^providers =/#providers =/' /etc/ssl/openssl.cnf
-
