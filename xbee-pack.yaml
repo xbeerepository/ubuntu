@@ -39,27 +39,27 @@ provider:
                 us-east-2: ami-0012df2bf9241367a
                 eu-west-1: ami-064bf2862ea219fe0
             linux_arm64:
-                eu-west-3: ami-0c2720a2edd0bee98
-                eu-west-2: ami-034c5bfef8576f936
-                eu-south-1: ami-0e213db5dce6b0d33
-                us-west-1: ami-05520d9ff0432435f
-                sa-east-1: ami-08d6b6f3f4d2ef1ba
-                us-east-2: ami-0934b64b0740081ee
-                eu-central-1: ami-0eb26ecd29fee120e
-                eu-north-1: ami-03fe00bfdb1041ceb
-                me-south-1: ami-0ce764fc928f44534
-                us-east-1: ami-0592ebc845607eaf8
-                af-south-1: ami-003b13e6d7ea6993e
-                ap-southeast-1: ami-040cea9b0546e145f
-                ap-east-1: ami-001f0978997cc67c2
-                ap-northeast-3: ami-040c20db18ca8c611
-                ap-northeast-1: ami-06032b9d631da4256
-                eu-west-1: ami-0a25604ac7d155966
-                ca-central-1: ami-044616bcebcf808e5
-                ap-south-1: ami-0330c74745da88186
-                us-west-2: ami-0f0a2adff92af740f
-                ap-northeast-2: ami-05a740735c6dabdb3
-                ap-southeast-2: ami-0dfb522acfbc2d50f
+                me-south-1: ami-02bf81ece7d5f1106
+                us-west-2: ami-07295e5fb4f134ec1
+                eu-west-3: ami-071a7885f5f6e9c44
+                eu-central-1: ami-08f3bb8a817cad923
+                eu-north-1: ami-04b95c3261af10dd4
+                us-east-2: ami-03dcd1f7eb45bb936
+                eu-west-1: ami-0c8755e88fdebe721
+                sa-east-1: ami-061f2684201d96176
+                ap-northeast-2: ami-09c6f5cab1b66c1ab
+                ap-southeast-1: ami-041b8dc17193fb7ee
+                ap-south-1: ami-0de6671d4003d7f1b
+                ap-northeast-1: ami-015a4236b8e471cf0
+                ap-northeast-3: ami-0b32e5eca2b7af080
+                eu-south-1: ami-0632b0a370fc47477
+                ca-central-1: ami-04b2c751c5e818f9b
+                us-east-1: ami-05e185dfc9150383a
+                af-south-1: ami-08734476f506184a1
+                eu-west-2: ami-00b5067e352aa07e2
+                us-west-1: ami-0bb7c176d17d46226
+                ap-southeast-2: ami-08797a70f8e8ef53a
+                ap-east-1: ami-0f3c633f4f49d7635
                 
 provision:
    - env: TZ={% timezone %}
