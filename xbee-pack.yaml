@@ -4,11 +4,11 @@ type: system
 
 system:
     user: ubuntu
-    container: "{% xbeeName %}:{% xbeeVersion %}"
+    container: "{{ .xbeeName }}:{{ .xbeeVersion }}"
 
 dev: ./ubuntu-dev
 
-in:
+var:
     timezone: Europe/Paris
 
 provider:
@@ -61,7 +61,7 @@ provider:
                 ap-southeast-2: ami-08aa40637f1b30e7f
                 eu-central-1: ami-00a0475e8cf40aea4
 provision:
-    - env: TZ={% timezone %}
+    - env: TZ={{ .timezone }}
     - shell:
         cmds:
           - sed -i 's/^providers =/#providers =/' /etc/ssl/openssl.cnf
