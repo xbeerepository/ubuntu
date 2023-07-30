@@ -4,6 +4,7 @@ actions:
   - pkg:
       name: ca-certificates wget
       update: true
+    before: "{{ .templates }}/timezone.sh"
     after:
         cmd: apt-get install -y tzdata
         envs:
