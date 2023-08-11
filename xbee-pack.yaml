@@ -4,7 +4,7 @@ type: system
 
 system:
     user: ubuntu
-    container: "{{ .xbee.name }}:{{ .xbeeVersion }}"
+    container: "{{ .xbee.name }}:{{ .xbee.version }}"
 
 dev: ./ubuntu-dev
 
