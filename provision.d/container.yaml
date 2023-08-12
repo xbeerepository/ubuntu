@@ -4,7 +4,7 @@ actions:
   - pkg:
       name: ca-certificates wget
       update: true
-    after: "{{ .templates }}/timezone.sh"
+    after: "{{ .xbee.templates }}/timezone.sh"
 
 
 
