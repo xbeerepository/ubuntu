@@ -19,49 +19,50 @@ provider:
     aws:
         amis:
             linux_amd64:
-                ap-northeast-2: ami-07e3035c14632e727
-                ap-southeast-2: ami-0852da27082c2894e
-                ca-central-1: ami-0d72cd73ffae7d5bd
-                us-west-2: ami-0a56172f65335a6b9
-                ap-south-1: ami-0ebc52990d3e9b542
-                us-west-1: ami-03f234639025c5ca5
-                af-south-1: ami-0bf2bbd2e2f7ba521
-                sa-east-1: ami-0be7790c9ebe9b4a6
-                eu-south-1: ami-0632a1367f721d324
-                me-south-1: ami-0fe508cf332a7d73c
-                ap-northeast-1: ami-0704ffbec86a0a365
-                eu-central-1: ami-0c25e0c74d5388764
-                us-east-2: ami-03de35fda144b3672
-                eu-north-1: ami-0406a3ca883a5a9d7
-                us-east-1: ami-03931f8db4516ef72
-                eu-west-1: ami-05c8c1550c73f7c38
-                ap-southeast-1: ami-02a8f0ff3fdb9f70a
-                ap-east-1: ami-0d3016c34d72b7cd0
-                ap-northeast-3: ami-08c46f145ca376730
-                eu-west-3: ami-07149dc35568edc82
-                eu-west-2: ami-01e8c5b6d3dc32150
+                me-south-1: ami-03369b944ffd21f70
+                ap-southeast-1: ami-047278fb5e1d4f0d0
+                ap-east-1: ami-015f4bead1257dcf4
+                us-west-1: ami-07bd696fbf9b7cbb5
+                ap-northeast-1: ami-0737bff111f77917c
+                ap-northeast-2: ami-065e17a094e84956b
+                eu-west-1: ami-0e71897609a49e7f2
+                ca-central-1: ami-0efc91649cae64160
+                us-west-2: ami-0685f74f46f1aced3
+                eu-south-1: ami-05b377f3bca3cef2e
+                sa-east-1: ami-0bcfff51f3085b525
+                ap-northeast-3: ami-0be80eaedac5375b8
+                ap-southeast-2: ami-017346a63c481a777
+                eu-west-3: ami-0b16ffbe667354eac
+                eu-west-2: ami-0c7859c2394e66108
+                eu-central-1: ami-0e932789dffdf6bc2
+                us-east-1: ami-05e54bbca4176bf0f
+                af-south-1: ami-0c7e921179c2e9c10
+                eu-north-1: ami-02178615c36e0ed96
+                us-east-2: ami-0ac36b6a54d6c7620
+                ap-south-1: ami-043099067d2e4848c
             linux_arm64:
-                eu-north-1: ami-0840d6e08273814b2
-                af-south-1: ami-024d0671334e35bda
-                sa-east-1: ami-0475064c41dd67ce8
-                ap-northeast-1: ami-04aa06c066edd3284
-                eu-west-2: ami-03d97290752b479c5
-                eu-west-1: ami-0c42d0c720a05f8fe
-                ap-northeast-2: ami-030525646e4942c5f
-                ap-northeast-3: ami-024421823c300bc6c
-                ap-south-1: ami-00072c30dce2f33ef
-                eu-south-1: ami-0198a21602a4ae2c0
-                us-east-2: ami-02eefc38bb11f78d7
-                us-east-1: ami-00807f447ba961dc4
-                us-west-1: ami-04f53f1da88f6cd1f
-                us-west-2: ami-08dc8105848fe4460
-                ap-southeast-1: ami-0ea194d2d150f5479
-                eu-west-3: ami-0a8a1b57d8552ad29
-                me-south-1: ami-0e70fb5851e8eb3f9
-                ca-central-1: ami-0f585161b3718ce8b
-                ap-east-1: ami-01fc011ffefe1d3eb
-                ap-southeast-2: ami-08aa40637f1b30e7f
-                eu-central-1: ami-00a0475e8cf40aea4
+                ap-northeast-3: ami-0da453fc7e8646633
+                ap-southeast-2: ami-01985b4597e047200
+                eu-west-3: ami-0c344b0aa7ee6ed26
+                me-south-1: ami-0b2cbeaf9d6a27d6d
+                ca-central-1: ami-01e16761334f7aa91
+                ap-northeast-2: ami-01d36741e41e4611a
+                eu-west-2: ami-09c46eaa0400e2b0a
+                us-east-2: ami-060e8c7c2a0cd8df2
+                us-east-1: ami-0bd9f859dd9105bd9
+                ap-east-1: ami-08fa648a92489e492
+                eu-central-1: ami-0d1cdd844c066920b
+                us-west-1: ami-0a64e0654df09e2f9
+                sa-east-1: ami-0a32d6d603ce056b2
+                ap-south-1: ami-0d76744f7020296d6
+                ap-southeast-1: ami-06d3bc9206c71b288
+                af-south-1: ami-0592b37bca4ba49d7
+                ap-northeast-1: ami-0178a66ddc9594e5e
+                us-west-2: ami-0cbf8cb349c53a844
+                eu-south-1: ami-0157e99de3dcd2f73
+                eu-north-1: ami-03b99b13fb4aa6dca
+                eu-west-1: ami-06457d1847224eff8
+
 provision:
     - shell:
         cmds:
