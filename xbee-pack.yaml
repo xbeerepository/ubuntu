@@ -63,7 +63,4 @@ provider:
                 ap-south-1: ami-089c47c17db696c3d
                 us-west-2: ami-0c4a98d72261df3f7
 
-provision:
-    - shell:
-        cmds:
-          - sed -i 's/^providers =/#providers =/' /etc/ssl/openssl.cnf
+
