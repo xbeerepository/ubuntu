@@ -62,5 +62,8 @@ provider:
                 ap-northeast-3: ami-05de43b9f41f66b42
                 ap-south-1: ami-089c47c17db696c3d
                 us-west-2: ami-0c4a98d72261df3f7
-
+    gcloud:
+        image:
+            amd64: projects/ubuntu-os-cloud/global/images/family/ubuntu-2004-lts
+            arm64:
 
