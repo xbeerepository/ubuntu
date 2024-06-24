@@ -19,49 +19,50 @@ provider:
     aws:
         amis:
             linux_amd64:
-                ap-northeast-1: ami-03523ae4e1b8051ca
-                ap-southeast-1: ami-01eae069f192f5617
-                af-south-1: ami-0c973f1aa469f9bf6
-                us-west-1: ami-0929a403e9765ca04
-                sa-east-1: ami-017095e9e389dd9a0
-                ap-south-1: ami-094078b27c4429b31
-                us-west-2: ami-03087577a38ff7e90
-                ap-northeast-2: ami-0aea43b7f91b7e7ee
-                ap-east-1: ami-00d7e58197bd7954c
-                eu-south-1: ami-0d89c7a2b9ba672b9
-                us-east-1: ami-0231d582080a6c05f
-                us-east-2: ami-0b9580d8262bad69b
-                me-south-1: ami-0cc90e669c0664fa1
-                ap-southeast-2: ami-0ae63c93abbfa716d
-                ap-northeast-3: ami-04325cb66f43db04d
-                eu-west-3: ami-0bd4d071e421b2ca5
-                eu-west-1: ami-0eb997625f8059d50
-                eu-west-2: ami-07f0a67a2da339e6e
-                eu-central-1: ami-0999ce66ae46a6dc7
-                eu-north-1: ami-0b505cd38a23bf86e
-                ca-central-1: ami-052f5d59128ff6ba1
+                ap-northeast-3: ami-05244b3e16965d50d
+                us-east-2: ami-0be45d7eabf011e3d
+                me-south-1: ami-05692903cfdc0c036
+                us-west-1: ami-09d752e13fa8036d3
+                ap-southeast-1: ami-08c5f4ee271db0933
+                eu-west-2: ami-0474244c88b835731
+                eu-west-1: ami-01e93c66feed74d08
+                af-south-1: ami-0bd65c8b51219ad27
+                ap-southeast-2: ami-08bab0dd72ff600c6
+                ap-northeast-2: ami-07d1d85660ec58cd3
+                eu-south-1: ami-0a9ef30c8549029c3
+                ca-central-1: ami-0a4c50a3e266777d3
+                us-west-2: ami-0a87d8e805902d07d
+                us-east-1: ami-06f59e43b31a49ecc
+                sa-east-1: ami-0cee76f3222e2193b
+                ap-east-1: ami-040fc2f8d8c644795
+                ap-south-1: ami-02d611e1ca359707d
+                ap-northeast-1: ami-0e23c1bed4a65b930
+                eu-west-3: ami-09a477b0776212c5c
+                eu-central-1: ami-0fc2927a21c4cd7e2
+                eu-north-1: ami-0b15dce563b217be3
             linux_arm64:
-                us-east-2: ami-0eccbf4bf8b6a63d4
-                us-west-2: ami-0799581c054f827cf
-                eu-central-1: ami-0d6b154ae118872e5
-                us-east-1: ami-0dcd74d990ca1eb4f
-                sa-east-1: ami-050654702a38ba867
-                ap-northeast-2: ami-0fdbe900f1dab88df
-                ap-southeast-2: ami-008afeb052ffbfd68
-                ap-southeast-1: ami-01c7facee47914beb
-                eu-west-3: ami-01de100c361eebde9
-                eu-west-2: ami-0a864c16c81644ceb
-                eu-north-1: ami-0285a109eea51110d
-                me-south-1: ami-051a7c98a1bda6785
-                us-west-1: ami-036a241c6ef2304c4
-                ap-south-1: ami-00cf86c1710c6e8c9
-                ap-northeast-1: ami-0c7a3d88df4c96ffa
-                eu-south-1: ami-00a50df2ceb86e140
-                eu-west-1: ami-04120976981fc479c
-                ap-east-1: ami-043d921aabe2408d3
-                ap-northeast-3: ami-0e58c6233a1cb060e
-                ca-central-1: ami-066c7b349c94b52d0
-                af-south-1: ami-0d6623cf4d15a9874
+                us-east-2: ami-05f4eba0c8acf607b
+                ap-northeast-3: ami-088449e7909180f6e
+                ap-east-1: ami-0c963a8dd40ddec4c
+                ap-northeast-1: ami-0d388e54f4e1e1a05
+                ap-southeast-1: ami-0009e306ebb05e743
+                eu-west-1: ami-07f9b6686a6d187db
+                eu-west-2: ami-0ab2b4633c17f7060
+                me-south-1: ami-01d9a950e092ccfba
+                ca-central-1: ami-0dc7af089987eaa86
+                af-south-1: ami-04eb1ec8c0f25d94b
+                sa-east-1: ami-0864021d7d6e6eebb
+                ap-northeast-2: ami-05fc0024edeb86888
+                eu-west-3: ami-00bcf43a70849358c
+                eu-central-1: ami-096d5d151d2d2c3d4
+                ap-southeast-2: ami-02a9b44bb576c447d
+                ap-south-1: ami-07adc65a60fc716d0
+                eu-south-1: ami-070d6c0c3b1495f2f
+                us-east-1: ami-01296213d823247f2
+                us-west-1: ami-0c0d58c0a4fc8de90
+                us-west-2: ami-0ad27234b2a04a5ff
+                eu-north-1: ami-01bf6f468080dbb3b
+    t
     gcloud:
         image:
             amd64: projects/ubuntu-os-cloud/global/images/family/ubuntu-2004-lts
