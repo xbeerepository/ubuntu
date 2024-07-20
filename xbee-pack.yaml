@@ -62,8 +62,8 @@ provider:
                 eu-west-1: ami-0667fdc9b41f22f8c
                 af-south-1: ami-0e783d1fc096e014c
                 sa-east-1: ami-08aac340188f8c6aa
-    gcloud:
+    gcp:
         image:
-            amd64: projects/ubuntu-os-cloud/global/images/family/ubuntu-2004-lts
-            arm64:
+            project: ubuntu-os-cloud
+            family: ubuntu-2404-lts
 
