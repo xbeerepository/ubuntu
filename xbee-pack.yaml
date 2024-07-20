@@ -65,5 +65,5 @@ provider:
     gcp:
         image:
             project: ubuntu-os-cloud
-            family: ubuntu-2404-lts
+            family: ubuntu-2004-lts
 
