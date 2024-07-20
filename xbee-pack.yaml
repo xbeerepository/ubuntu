@@ -62,7 +62,7 @@ provider:
                 us-west-1: ami-0c0d58c0a4fc8de90
                 us-west-2: ami-0ad27234b2a04a5ff
                 eu-north-1: ami-01bf6f468080dbb3b
-    gcloud:
+    gcp:
         image:
             project: ubuntu-os-cloud
             family: ubuntu-2404-lts
