@@ -1,10 +1,8 @@
 schema-version: 1.0
 
-type: system
-
 system:
     user: ubuntu
-    container: "{{ .xbee.name }}:{{ .xbee.version }}"
+    container: "{{ .xbee.name }}:{{ .xbee.ref }}"
 
 dev: ./ubuntu-dev
 
