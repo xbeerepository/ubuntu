@@ -1,10 +1,8 @@
 schema-version: 1.0
 
-type: system
-
 system:
-  user: ubuntu
-  container: "{% xbeeName %}:{% xbeeVersion %}"
+    user: ubuntu
+    container: "{{ .xbee.name }}:{{ .xbee.ref }}"
 
 dev: ./ubuntu-dev
 
@@ -59,8 +57,8 @@ provider:
           us-east-2: ami-0288d7a02d924360a
 
     
-in:
+var:
   timezone: Europe/Paris
  
 provision:
-  - env: TZ={% timezone %}
+  - env: TZ={{ .timezone }}
