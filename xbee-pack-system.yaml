@@ -7,6 +7,8 @@ system:
 dev: ./ubuntu-dev
 
 var:
+    xbee:
+        version: 24.04
     timezone:
         region: Europe
         city: Paris
