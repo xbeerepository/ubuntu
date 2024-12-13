@@ -9,6 +9,8 @@ dev: ./ubuntu-dev
 var:
     xbee:
         version: 24.04
+        user: ubuntu
+        group: ubuntu
     timezone:
         region: Europe
         city: Paris
