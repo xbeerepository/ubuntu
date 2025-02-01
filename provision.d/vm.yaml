@@ -5,3 +5,6 @@ actions:
       cmds:
         - rm -f /etc/localtime
         - ln -s /usr/share/zoneinfo/{{ .timezone.region }}/{{ .timezone.city }} /etc/localtime
+        - cp {{ .xbee.resources }}/virtualbox.yaml /etc/netplan/xbee.yaml
+        - chmod 600 /etc/netplan/xbee.yaml
+
