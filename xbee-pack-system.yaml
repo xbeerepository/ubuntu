@@ -19,6 +19,16 @@ provider:
     virtualbox:
         disk: https://cloud-images.ubuntu.com/noble/20250122/noble-server-cloudimg-amd64.vmdk
         ostype: Ubuntu_64
+        cloud-init: |
+            cat > /etc/netplan/xbee.yaml <<EOF
+            network:
+                version: 2
+                ethernets:
+                    enp0s8:
+                        dhcp4: true
+                        dhcp6: true
+            EOF
+            chmod 600 /etc/netplan/xbee.yaml
     aws:
         amis:
             linux_amd64:
