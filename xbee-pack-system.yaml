@@ -29,6 +29,7 @@ provider:
                         dhcp6: true
             EOF
             chmod 600 /etc/netplan/xbee.yaml
+            netplan apply
     aws:
         amis:
             linux_amd64:
