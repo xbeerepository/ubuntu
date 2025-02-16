@@ -29,6 +29,8 @@ provider:
                         dhcp6: true
             EOF
             chmod 600 /etc/netplan/xbee.yaml
+            rm /etc/machine-id
+            systemd-machine-id-setup
             netplan apply
     aws:
         amis:
