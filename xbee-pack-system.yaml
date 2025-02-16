@@ -20,6 +20,8 @@ provider:
         disk: https://cloud-images.ubuntu.com/noble/20250122/noble-server-cloudimg-amd64.vmdk
         ostype: Ubuntu_64
         cloud-init: |
+            rm /etc/machine-id
+            systemd-machine-id-setup
             cat > /etc/netplan/xbee.yaml <<EOF
             network:
                 version: 2
@@ -29,8 +31,6 @@ provider:
                         dhcp6: true
             EOF
             chmod 600 /etc/netplan/xbee.yaml
-            rm /etc/machine-id
-            systemd-machine-id-setup
             netplan apply
     aws:
         amis:
