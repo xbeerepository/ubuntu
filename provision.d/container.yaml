@@ -1,10 +1,7 @@
-labels:
+label:
   container: true
 actions:
   - pkg:
       name: ca-certificates wget locales
       update: true
     after: "{{ .xbee.templates }}/timezone.sh"
-
-
-
