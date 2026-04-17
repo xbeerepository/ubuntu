@@ -83,3 +83,6 @@ provider:
         image:
             project: ubuntu-os-cloud
             family: ubuntu-2404-lts
+
+env: "TZ={{ .timezone.region }}/{{ .timezone.city }}"
+
