@@ -1,8 +1,9 @@
 schema-version: 1.0
 
 provision:
-  - pkg: build-essential clang automake
-    env: DEBIAN_FRONTEND=noninteractive
+  - pkg:
+      name: build-essential clang automake
+      env: DEBIAN_FRONTEND=noninteractive
 
 
 
