@@ -107,8 +107,12 @@ provider:
                 us-west-2: ami-0d5e6fb701c311c79
     gcp:
         image:
-            project: ubuntu-os-cloud
-            family: ubuntu-2404-lts
+            linux_amd64:
+                project: ubuntu-os-cloud
+                family: ubuntu-2604-lts-amd64
+            linux_arm64:
+                project: ubuntu-os-cloud
+                family: ubuntu-2604-lts-arm64
 
 env: "TZ={{ .timezone.region }}/{{ .timezone.city }}"
 
