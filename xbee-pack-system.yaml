@@ -81,8 +81,24 @@ provider:
                 eu-north-1: ami-01bf6f468080dbb3b
     gcp:
         image:
-            project: ubuntu-os-cloud
-            family: ubuntu-2404-lts
+            linux_amd64:
+                project: ubuntu-os-cloud
+                family: ubuntu-2404-lts-amd64
+            linux_arm64:
+                project: ubuntu-os-cloud
+                family: ubuntu-2404-lts-arm64
+    azure:
+        image:
+            linux_amd64:
+                publisher: Canonical
+                offer: ubuntu-24_04-lts
+                sku: server
+                version: latest
+            linux_arm64:
+                publisher: Canonical
+                offer: ubuntu-24_04-lts
+                sku: server-arm64
+                version: latest
 
 env: "TZ={{ .timezone.region }}/{{ .timezone.city }}"
 
