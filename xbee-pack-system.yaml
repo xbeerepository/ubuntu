@@ -113,6 +113,20 @@ provider:
             linux_arm64:
                 project: ubuntu-os-cloud
                 family: ubuntu-2604-lts-arm64
+    azure:
+        # vérifié via `az vm image list-skus --publisher Canonical --offer ubuntu-26_04-lts --location francecentral`
+        # et `az vm image show --urn Canonical:ubuntu-26_04-lts:<sku>:latest` (image active, dernière version 26.04.202606210)
+        image:
+            linux_amd64:
+                publisher: Canonical
+                offer: ubuntu-26_04-lts
+                sku: server
+                version: latest
+            linux_arm64:
+                publisher: Canonical
+                offer: ubuntu-26_04-lts
+                sku: server-arm64
+                version: latest
 
 env: "TZ={{ .timezone.region }}/{{ .timezone.city }}"
 
