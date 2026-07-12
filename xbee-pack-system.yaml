@@ -99,6 +99,14 @@ provider:
                 offer: ubuntu-24_04-lts
                 sku: server-arm64
                 version: latest
+    scaleway:
+        image:
+            linux_amd64:
+                label: ubuntu_noble
+                arch: x86_64
+            linux_arm64:
+                label: ubuntu_noble
+                arch: arm64
 
 env: "TZ={{ .timezone.region }}/{{ .timezone.city }}"
 
