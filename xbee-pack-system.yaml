@@ -108,5 +108,4 @@ provider:
                 label: ubuntu_noble
                 arch: arm64
 
-env: "TZ={{ .timezone.region }}/{{ .timezone.city }}"
 
