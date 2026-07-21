@@ -15,7 +15,7 @@ provider:
     virtualbox:
         disk: https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.vmdk
     aws:
-        amis:
+        ami:
             linux_amd64:
                 us-east-2: ami-0fea6a0875dfef2a1
                 us-east-1: ami-085b487ee0f200a2b
