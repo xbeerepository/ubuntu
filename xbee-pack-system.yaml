@@ -128,5 +128,4 @@ provider:
                 sku: server-arm64
                 version: latest
 
-env: "TZ={{ .timezone.region }}/{{ .timezone.city }}"
 
