@@ -10,7 +10,7 @@ provider:
   virtualbox:
       disk: http://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.vmdk
   aws:
-    amis:
+    ami:
       linux_amd64:
           eu-south-1: ami-0aa59df2c2904b24e
           ca-central-1: ami-09025477123161cb9
