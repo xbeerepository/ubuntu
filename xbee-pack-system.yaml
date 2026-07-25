@@ -16,6 +16,8 @@ var:
         city: Paris
 
 provider:
+    ovh:
+        image: Ubuntu 24.04
     virtualbox:
         disk: https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.vmdk
         ostype: Ubuntu_64
@@ -131,5 +133,4 @@ provider:
             linux_arm64:
                 label: ubuntu_noble
                 arch: arm64
-
 
