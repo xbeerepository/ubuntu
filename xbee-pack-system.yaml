@@ -16,6 +16,8 @@ var:
         city: Paris
 
 provider:
+    ovh:
+        image: Ubuntu 26.04
     virtualbox:
         disk: https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.vmdk
         ostype: Ubuntu_64
@@ -127,5 +129,4 @@ provider:
                 offer: ubuntu-26_04-lts
                 sku: server-arm64
                 version: latest
-
 
