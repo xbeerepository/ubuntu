@@ -16,6 +16,9 @@ var:
         city: Paris
 
 provider:
+    ionos:
+        imageAlias:
+            linux_amd64: ubuntu:24.04
     ovh:
         image: Ubuntu 24.04
     virtualbox:
@@ -133,4 +136,3 @@ provider:
             linux_arm64:
                 label: ubuntu_noble
                 arch: arm64
-
