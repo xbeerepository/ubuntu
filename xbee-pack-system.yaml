@@ -12,6 +12,9 @@ var:
         city: Paris
 
 provider:
+    ionos:
+        imageAlias:
+            linux_amd64: ubuntu:22.04
     virtualbox:
         disk: https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.vmdk
     aws:
@@ -66,4 +69,3 @@ provider:
         image:
             amd64: projects/ubuntu-os-cloud/global/images/family/ubuntu-2004-lts
             arm64:
-
