@@ -16,6 +16,9 @@ var:
         city: Paris
 
 provider:
+    ionos:
+        imageAlias:
+            linux_amd64: ubuntu:26.04
     ovh:
         image: Ubuntu 26.04
     virtualbox:
@@ -129,4 +132,3 @@ provider:
                 offer: ubuntu-26_04-lts
                 sku: server-arm64
                 version: latest
-
