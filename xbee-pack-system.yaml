@@ -2,7 +2,7 @@ schema-version: 1.0
 
 system:
     user: ubuntu
-    container: "{{ .xbee.name }}:{{ .xbee.ref }}"
+    container: "ubuntu:{{ .xbee.version }}"
 
 dev: ./ubuntu-dev
 
@@ -16,6 +16,16 @@ var:
         city: Paris
 
 provider:
+    firecracker:
+        kernel:
+            url: https://github.com/xbeerepository/lfs/releases/download/v0.3.4/xbee-kernel-6.18.10-r5-microvm-x86_64.tar.zst
+            bundleSha256: 0e80fc769120fcc9cb28609530153e17eaf091b5cda20c78ce2ee17d261b5bf0
+            name: xbee-kernel
+            version: 6.18.10
+            revision: "5"
+            variant: microvm
+            architecture: x86_64
+            release: 6.18.10-xbee-lfs
     ionos:
         imageAlias:
             linux_amd64: ubuntu:26.04
@@ -132,3 +142,12 @@ provider:
                 offer: ubuntu-26_04-lts
                 sku: server-arm64
                 version: latest
+
+provision:
+    - pkg:
+          name: ca-certificates openssh-server iproute2 sudo
+          update: true
+          env: DEBIAN_FRONTEND=noninteractive
+    - shell: |
+          install -d -m 0755 /run/sshd
+          systemctl enable ssh.service
