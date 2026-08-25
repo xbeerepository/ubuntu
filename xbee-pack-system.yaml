@@ -36,6 +36,16 @@ provider:
             variant: microvm
             architecture: x86_64
             release: 6.18.10-xbee-lfs
+    qemu:
+        kernel:
+            url: https://github.com/xbeerepository/lfs/releases/download/v0.3.5/xbee-kernel-6.18.10-r6-microvm-x86_64.tar.zst
+            bundleSha256: e0c528dd637fad5b4f203c011aff065bd389df416497d6e4afbef8be64260add
+            name: xbee-kernel
+            version: 6.18.10
+            revision: "6"
+            variant: microvm
+            architecture: x86_64
+            release: 6.18.10-xbee-lfs
     ionos:
         imageAlias:
             linux_amd64: ubuntu:24.04
