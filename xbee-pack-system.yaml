@@ -18,11 +18,21 @@ var:
 provider:
     firecracker:
         kernel:
-            url: https://github.com/xbeerepository/lfs/releases/download/v0.3.4/xbee-kernel-6.18.10-r5-microvm-x86_64.tar.zst
-            bundleSha256: 0e80fc769120fcc9cb28609530153e17eaf091b5cda20c78ce2ee17d261b5bf0
+            url: https://github.com/xbeerepository/lfs/releases/download/v0.3.5/xbee-kernel-6.18.10-r6-microvm-x86_64.tar.zst
+            bundleSha256: e0c528dd637fad5b4f203c011aff065bd389df416497d6e4afbef8be64260add
             name: xbee-kernel
             version: 6.18.10
-            revision: "5"
+            revision: "6"
+            variant: microvm
+            architecture: x86_64
+            release: 6.18.10-xbee-lfs
+    cloud-hypervisor:
+        kernel:
+            url: https://github.com/xbeerepository/lfs/releases/download/v0.3.5/xbee-kernel-6.18.10-r6-microvm-x86_64.tar.zst
+            bundleSha256: e0c528dd637fad5b4f203c011aff065bd389df416497d6e4afbef8be64260add
+            name: xbee-kernel
+            version: 6.18.10
+            revision: "6"
             variant: microvm
             architecture: x86_64
             release: 6.18.10-xbee-lfs
