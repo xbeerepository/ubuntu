@@ -52,7 +52,7 @@ provider:
     ovh:
         image: Ubuntu 26.04
     virtualbox:
-        disk: https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.vmdk
+        disk: https://cloud-images.ubuntu.com/releases/resolute/release/ubuntu-26.04-server-cloudimg-amd64.vmdk
         ostype: Ubuntu_64
         cloud-init: |
             rm /etc/machine-id
