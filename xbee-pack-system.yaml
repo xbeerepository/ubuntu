@@ -2,7 +2,9 @@ schema-version: 1.0
 
 system:
     user: ubuntu
-    container: "ubuntu:{{ .xbee.version }}"
+    # Immutable multi-platform index from the audited Ubuntu 24.04 image.
+    # Updating xbee.version alone must not select a different base image.
+    container: "ubuntu:24.04@sha256:d78ab76437b1afc5f01e223d6bf0172763f404bb166441328845adbef44518cb"
 
 dev: ./ubuntu-dev
 
